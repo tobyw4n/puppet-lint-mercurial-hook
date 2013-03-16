@@ -1,4 +1,6 @@
-#!/bin/bash 
+#!/bin/bash
+# This script mostly came from a blog post by Ben Hughes at
+# https://puppetlabs.com/blog/using-puppet-lint-to-save-yourself-from-style-faux-pas/ 
 
 which puppet-lint >/dev/null 2>&1
 LINTTRAP=$?
