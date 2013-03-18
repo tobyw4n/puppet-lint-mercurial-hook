@@ -2,6 +2,9 @@
 # This script mostly came from a blog post by Ben Hughes at
 # https://puppetlabs.com/blog/using-puppet-lint-to-save-yourself-from-style-faux-pas/ 
 
+
+# You're telling Mercurial to run puppet-lint so it should probably fail if
+# you don't have it installed.
 which puppet-lint >/dev/null 2>&1
 LINTTRAP=$?
 if [ $LINTTRAP -ne 0 ]
